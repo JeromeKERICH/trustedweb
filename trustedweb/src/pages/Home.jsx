@@ -7,7 +7,6 @@ import InteractiveToolsPreview from '../components/Tools'
 import ServicesPreview from '../components/Services'
 import ClientSuccessStoriesPreview from '../components/Clients'
 import WhatsAppListCTA from '../components/List'
-import LibraryPreview from '../components/LibraryPreview'
 
 
 
@@ -21,7 +20,6 @@ const Home = () => {
       <StorySection/>
       <WhatYouWillLearnSection/>
       <CallToActionSection/>
-      <LibraryPreview/>
       <InteractiveToolsPreview/>
       <ServicesPreview/>
       <ClientSuccessStoriesPreview/>

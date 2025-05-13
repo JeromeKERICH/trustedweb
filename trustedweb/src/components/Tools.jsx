@@ -35,7 +35,7 @@ function InteractiveToolsPreview() {
   return (
     <section className="bg-gray-50 border-t border-gray-200 py-6 md:py-10 px-[4%] md:px-[10%] max-w-7xl mx-auto">
       <div className="text-center mb-10">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Interactive Tools to Guide You</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-teal-600 mb-4">Smart Tools to Help You Navigate</h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Use these smart tools to clarify what you need, budget confidently, and plan your website the right way, before hiring anyone.
         </p>

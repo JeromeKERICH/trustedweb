@@ -19,7 +19,7 @@ export default function StorySection() {
   
           {/* Text content */}
           <div className="text-start md:text-left">
-            <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-6 text-center">
+            <h2 className="text-2xl md:text-4xl font-extrabold text-teal-600 mb-6 text-center">
               I’ve been there.
             </h2>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">

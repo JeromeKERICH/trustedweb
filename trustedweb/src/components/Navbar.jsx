@@ -7,7 +7,7 @@ export default function Navbar() {
 
   const links = [
     { name: 'Home', path: '/' },
-    { name: 'Library', path: '/library' },
+    { name: 'Library', path: '/resources' },
     { name: 'Services', path: '/services' },
     { name: 'Developers', path: '/developers' },
     { name: 'Store', path: '/store' },

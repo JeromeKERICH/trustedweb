@@ -38,7 +38,7 @@ function WhatYouWillLearnSection() {
   return (
     <section className="bg-gray-50 border-t border-gray-200 py-2.5 md:py-5 px-[4%] md:px-[10%]">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">What You’ll Learn Here</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-teal-600 mb-6">The Powerhouse</h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
           Whether you’re building your first website or planning a redesign, these lessons will give you clarity, confidence, and control.
         </p>

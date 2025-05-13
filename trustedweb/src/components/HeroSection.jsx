@@ -4,8 +4,8 @@ function HeroSection() {
   return (
     <section className="bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16 md:py-24">
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
-          Build with clarity.<br /> <span className="text-2xl sm:text-3xl md:text-4xl text-teal-600">NEVER GET SCAMMED AGAIN!!!   </span>
+        <h1 className="text-1xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-6">
+          BUILD WITH CLARITY.<br /> <span className="text-2xl sm:text-3xl md:text-4xl text-teal-600">NEVER GET SCAMMED AGAIN!!!   </span>
         </h1>
         <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Understand every step before you build. Empower yourself with the tools, knowledge, and confidence to work with any developer transparently.

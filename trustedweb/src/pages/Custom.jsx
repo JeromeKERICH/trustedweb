@@ -12,13 +12,28 @@ function CustomDevelopment() {
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-4">
-          Custom Website Development
+          Custom Web Development
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
           Build a website tailored exactly to your business with full transparency, smart tech choices, and zero shortcuts.
         </p>
       </div>
 
+
+
+{/* CTA */}
+      <div className="bg-teal-600 text-white rounded-2xl p-8 text-center shadow-lg mb-16">
+        <p className="text-xl font-medium mb-2">Custom projects start at</p>
+        <p className="text-5xl font-bold mb-2">$1,500 USD</p>
+        <p className="text-sm mb-4">Final pricing depends on project scope</p>
+        <Link
+          to="/contact"
+          className="inline-block bg-white text-teal-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition"
+        >
+          Request a Discovery Call
+        </Link>
+        <p className="text-xs mt-3 opacity-80">We only take 2 custom projects per month</p>
+      </div>
       {/* Sections */}
       <div className="grid md:grid-cols-3 gap-8 mb-16">
 
@@ -61,23 +76,11 @@ function CustomDevelopment() {
           <li><span className="font-semibold">Clarity Call:</span> We discuss your vision, goals, and must-haves.</li>
           <li><span className="font-semibold">Website Blueprint:</span> You receive a full scope, timeline & quote.</li>
           <li><span className="font-semibold">Development:</span> We build in weekly transparent milestones.</li>
-          <li><span className="font-semibold">Launch & Support:</span> Smooth handover + 30-day support.</li>
+          <li><span className="font-semibold">Launch & Support:</span> Smooth handover + 30-day support. </li>
         </ol>
       </div>
 
-      {/* CTA */}
-      <div className="bg-teal-600 text-white rounded-2xl p-8 text-center shadow-lg mb-16">
-        <p className="text-xl font-medium mb-2">Custom projects start at</p>
-        <p className="text-5xl font-bold mb-2">$1,500 USD</p>
-        <p className="text-sm mb-4">Final pricing depends on project scope</p>
-        <Link
-          to="/contact"
-          className="inline-block bg-white text-teal-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition"
-        >
-          Request a Discovery Call
-        </Link>
-        <p className="text-xs mt-3 opacity-80">We only take 2 custom projects per month</p>
-      </div>
+      
 
     </section>
   );

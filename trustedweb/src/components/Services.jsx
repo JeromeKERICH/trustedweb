@@ -26,7 +26,7 @@ function ServicesPreview() {
   return (
     <section className="bg-white py-6 md:py-10 px-[4%] md:px-[10%] max-w-7xl mx-auto">
       <div className="text-center mb-10">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Services that Bring Clarity</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-teal-600 mb-4">Services that Bring Clarity</h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Whether you’re just starting or fixing a mess, these services help you build smarter, safer, and stress-free.
         </p>

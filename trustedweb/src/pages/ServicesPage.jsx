@@ -9,16 +9,19 @@ function Services() {
 
     return (
       <section className="py-12 px-[4%] md:px-[10%] max-w-7xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Our Services</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-teal-600 mb-6 text-center">Our Solutions</h1>
         <p className="text-lg text-gray-600 mb-8 text-center">
           Get clarity, avoid scams, and build a website that actually works for your business, with expert guidance at every step.
         </p>
+
+
+        
   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   
           {/* Service 1 — Web Clarity Call */}
           <div className="bg-white p-6 rounded shadow hover:shadow-md transition flex flex-col">
-            <h2 className="text-xl font-semibold mb-2 text-teal-700">Web Clarity Call</h2>
+            <h2 className="text-xl font-semibold mb-2 text-black-100">Web Clarity Call</h2>
             <p className="text-gray-600 text-sm flex-grow mb-3">
               A 15-minute clarity session to answer your burning questions, review proposals, and help you avoid common traps.
             </p>
@@ -34,7 +37,7 @@ function Services() {
   
           {/* Service 2 — Website Planning Blueprint */}
           <div className="bg-white p-6 rounded shadow hover:shadow-md transition flex flex-col">
-            <h2 className="text-xl font-semibold mb-2 text-teal-700">Website Planning Blueprint</h2>
+            <h2 className="text-xl font-semibold mb-2 text-black-100">Website Planning Blueprint</h2>
             <p className="text-gray-600 text-sm flex-grow mb-3">
               A custom deliverable that outlines your website’s structure, recommended tech stack, must-haves, and next steps.
             </p>
@@ -50,7 +53,7 @@ function Services() {
   
           {/* Service 3 — Website Audit */}
           <div className="bg-white p-6 rounded shadow hover:shadow-md transition flex flex-col">
-            <h2 className="text-xl font-semibold mb-2 text-teal-700">Website Audit</h2>
+            <h2 className="text-xl font-semibold mb-2 text-black-100">Website Audit</h2>
             <p className="text-gray-600 text-sm flex-grow mb-3">
               Already have a site but facing issues? I’ll audit the tech, performance & usability — and show you exactly what to fix.
             </p>
@@ -65,7 +68,7 @@ function Services() {
           </div>
 
           <div className="bg-white p-6 rounded shadow hover:shadow-md transition flex flex-col">
-            <h2 className="text-xl font-semibold mb-2 text-teal-700">Custom Development</h2>
+            <h2 className="text-xl font-semibold mb-2 text-black-100">Custom Development</h2>
             <p className="text-gray-600 text-sm flex-grow mb-3">
               Need a custom solution? I can help you build a website that meets your unique needs and goals.
             </p>
@@ -80,7 +83,7 @@ function Services() {
             </div>
 
             <div className="bg-white p-6 rounded shadow hover:shadow-md transition flex flex-col">
-                <h2 className="text-xl font-semibold mb-2 text-teal-700">Pre-Website Coaching</h2>
+                <h2 className="text-xl font-semibold mb-2 text-black-100">Pre-Website Coaching</h2>
                 <p className="text-gray-600 text-sm flex-grow mb-3">
                     Not sure where to start? I’ll guide you through the essentials of planning your online presence before building a website.
                 </p>
@@ -93,9 +96,9 @@ function Services() {
                     Learn More
                 </Link>
             </div>
-
-            <div className="bg-white p-6 rounded shadow hover:shadow-md transition flex flex-col">
-                <h2 className="text-xl font-semibold mb-2 text-teal-700">Monthly Workshop</h2>
+            
+              <div className="bg-white p-6 rounded shadow hover:shadow-md transition flex flex-col">
+                <h2 className="text-xl font-semibold mb-2 text-teal-700text-black-100">Monthly Workshop</h2>
                 <p className="text-gray-600 text-sm flex-grow mb-3">
                     Join our monthly workshop to stay updated on the latest web trends, tools, and strategies to grow your online presence.
                 </p>
@@ -108,6 +111,7 @@ function Services() {
                     Reserve Your Spot
                 </Link>
             </div>
+            
             
         </div>
       </section>

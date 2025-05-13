@@ -10,13 +10,27 @@ function MonthlyWorkshop() {
     <section className="py-16 px-4 md:px-[10%] max-w-6xl mx-auto">
 
       {/* Header */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-12">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-4">
           Monthly Website Clarity Workshop
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
           A live, interactive workshop where founders & creators learn how to plan, budget, and build smarter without getting lost in tech jargon.
         </p>
+      </div>
+
+       <div className="bg-teal-600 text-white rounded-2xl p-8 text-center shadow-lg mb-16">
+        <p className="text-2xl md:text-4xl font-bold mb-2">First Saturday of every month</p>
+        <p className="text-lg mb-4">1 PM EST · Online (via Zoom)</p>
+        <p className="text-3xl text font-bold mb-2">$49 USD</p>
+        <p className="text-sm mb-4">Limited to 30 participants per month</p>
+        <Link
+          to="/contact"
+          className="inline-block bg-white text-teal-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition"
+        >
+          Reserve Your Spot
+        </Link>
+        <p className="text-xs mt-3 opacity-80">Spots fill fast, first come, first served</p>
       </div>
 
       {/* Workshop benefits */}
@@ -57,19 +71,7 @@ function MonthlyWorkshop() {
       </div>
 
       {/* Pricing box */}
-      <div className="bg-teal-600 text-white rounded-2xl p-8 text-center shadow-lg mb-16">
-        <p className="text-2xl md:text-4xl font-bold mb-2">First Saturday of every month</p>
-        <p className="text-lg mb-4">1 PM EST · Online (via Zoom)</p>
-        <p className="text-3xl text font-bold mb-2">$49 USD</p>
-        <p className="text-sm mb-4">Limited to 30 participants per month</p>
-        <Link
-          to="/contact"
-          className="inline-block bg-white text-teal-700 font-semibold py-3 px-6 rounded-full hover:bg-gray-100 transition"
-        >
-          Reserve Your Spot
-        </Link>
-        <p className="text-xs mt-3 opacity-80">Spots fill fast, first come, first served</p>
-      </div>
+     
 
       {/* Testimonial preview (optional later) */}
       {/* <div className="bg-gray-50 border border-gray-200 rounded-2xl p-8 text-center shadow-sm">
