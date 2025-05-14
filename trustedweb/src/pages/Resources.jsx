@@ -1,13 +1,6 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../utils/supabaseClient";
 import { Link } from "react-router-dom";
-import * as Icons from "lucide-react";
-
-// 🔧 Utility component: dynamically render Lucide icon by name
-const IconFromName = ({ name, className }) => {
-  const LucideIcon = Icons[name] || Icons.FileText;
-  return <LucideIcon className={className} />;
-};
 
 export default function Resources() {
   const [articles, setArticles] = useState([]);
@@ -28,7 +21,7 @@ export default function Resources() {
   const fetchArticles = async () => {
     const { data, error } = await supabase
       .from("articles")
-      .select("*, categories(name, icon)")
+      .select("*, categories(name)") // removed 'icon' to prevent 400 error
       .order("created_at", { ascending: false });
 
     if (error) console.error("Article fetch error:", error);
@@ -65,7 +58,7 @@ export default function Resources() {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-4 py-2 rounded-full border${
+              className={`px-4 py-2 rounded-full border ${
                 selectedCategory === cat.id
                   ? "bg-teal-600 text-white"
                   : "bg-white text-gray-700 hover:bg-gray-100"
@@ -83,13 +76,6 @@ export default function Resources() {
               key={article.id}
               className="bg-white rounded-xl shadow-sm p-6 text-left hover:shadow-md transition"
             >
-              {article.categories?.icon && (
-                <IconFromName
-                  name={article.categories.icon}
-                  className="w-6 h-6 text-teal-600 mb-3"
-                />
-              )}
-
               <h3 className="text-lg font-semibold text-gray-900 mb-1">
                 {article.title}
               </h3>

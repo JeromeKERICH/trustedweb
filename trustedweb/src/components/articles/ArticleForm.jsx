@@ -3,9 +3,19 @@ import { supabase } from "../../utils/supabaseClient";
 
 export default function ArticleForm({ selectedArticle, onSaved, onCancel }) {
   const [title, setTitle] = useState("");
+  const [slug, setSlug] = useState("");
   const [content, setContent] = useState("");
   const [categoryId, setCategoryId] = useState("");
   const [categories, setCategories] = useState([]);
+
+  // Slug generator
+  const generateSlug = (title) => {
+    return title
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  };
 
   // Fetch categories from Supabase
   const fetchCategories = async () => {
@@ -24,19 +34,28 @@ export default function ArticleForm({ selectedArticle, onSaved, onCancel }) {
   useEffect(() => {
     if (selectedArticle) {
       setTitle(selectedArticle.title);
+      setSlug(selectedArticle.slug || "");
       setContent(selectedArticle.content || "");
       setCategoryId(selectedArticle.category_id || "");
     } else {
       setTitle("");
+      setSlug("");
       setContent("");
       setCategoryId("");
     }
   }, [selectedArticle]);
 
+  const handleTitleChange = (e) => {
+    const newTitle = e.target.value;
+    setTitle(newTitle);
+    setSlug(generateSlug(newTitle));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const values = {
       title,
+      slug,
       content,
       category_id: categoryId || null,
       updated_at: new Date(),
@@ -70,7 +89,15 @@ export default function ArticleForm({ selectedArticle, onSaved, onCancel }) {
           type="text"
           placeholder="Title"
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={handleTitleChange}
+          required
+        />
+        <input
+          className="w-full border p-2 rounded"
+          type="text"
+          placeholder="Slug (auto-generated)"
+          value={slug}
+          onChange={(e) => setSlug(e.target.value)}
           required
         />
         <select
